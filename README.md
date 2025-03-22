@@ -1,3 +1,4 @@
+
 # Equitable AI For Dermatology Team SPF
 
 ### **👥 Team Members**
@@ -5,12 +6,14 @@
 | Name | GitHub Handle | Contribution |
 | ----- | ----- | ----- |
 | Brianna Anaya  | @Briannanaya | Worked with EfficientNet CNN |
-| Mel Ramakrishnan | @MelRam | Led EDA, visualized dataset distributions, handled missing data |
-| Charlie Nguyen | @CharlieN | Implemented explainability tools |
 | Veronica Zhao | @verozhao | Worked with Ensembled MobileNetV2, EfficientNetB0, and DenseNet121 |
+| Maame Abena |  |  |
+| Samin Chowdhury |  |  |
+| Shahed Ahmed |  |  |
+| Khadija Dial |  |  |
 
 ---
-
+<!--
 ## **🎯 Project Highlights**
 
 **Example:**
@@ -36,31 +39,52 @@
 * How to run the notebook or scripts
 
 ---
-
+-->
 ## **🏗️ Project Overview**
 
-**Describe:**
-
-* The Kaggle competition and its connection to the Break Through Tech AI Program
-* The objective of the challenge
-* The real-world significance of the problem and the potential impact of your work
+* This project is part of a Kaggle competition sponsored by Break Through Tech and the Algorithmic Justice League, aiming to build more inclusive AI models in dermatology. The competition involves Break Through Tech AI Fellows from various programs, including Virtual, MIT, and UCLA, with mentorship from data science and AI TAs.
+* The primary goal of this competition is to develop a machine learning model capable of classifying 21 different skin conditions across diverse skin tones. Given the historical underrepresentation of darker skin tones in dermatology AI datasets, this project seeks to address bias and improve model performance across all demographics. The competition evaluates submissions based on a weighted average F1 score.
+* AI-driven diagnostic tools are increasingly used in healthcare, yet biases in training data can lead to disparities in diagnosis and treatment. By developing an inclusive dermatology AI model, this project contributes to reducing healthcare inequities, ensuring better diagnostic accuracy for historically marginalized communities. Our work aligns with ongoing research at institutions such as Stanford and MIT Media Lab, promoting fairness and explainability in AI models.
 
 ---
 
 ## **📊 Data Exploration**
 
-**Describe:**
+**Dataset description**
 
-* The dataset(s) used (i.e., the data provided in Kaggle \+ any additional sources)
-* Data exploration and preprocessing approaches
-* Challenges and assumptions when working with the dataset(s)
+* The competition dataset consists of dermatological images labeled with 21 different skin conditions. It includes metadata such as skin tone distribution and lesion types. To enhance model performance and fairness, we may incorporate external datasets and employ augmentation techniques.
 
-**Potential visualizations to include:**
+**Data Exploration & Preprocessing Approaches**
+- **Handling Class Imbalance:** Given the known imbalance in skin tone representation, we utilize data augmentation techniques such as flipping, rotation, and brightness adjustments to ensure fair representation across all skin tones.
+- **Transfer Learning:** We fine-tune pre-trained convolutional neural networks (CNNs) to adapt them to our classification task, optimizing performance while reducing computational costs.
+- **Fairness and Explainability:** Using AI fairness tools like Fairlearn, we analyze model biases and adjust our preprocessing pipeline accordingly.
 
-* Plots, charts, heatmaps, feature visualizations, sample dataset images
+**Challenges**
+
+##### Class Imbalance  
+- The dataset has an uneven distribution of skin tones, with lighter skin tones being overrepresented.  
+- Certain skin conditions appear less frequently, making it difficult for the model to learn their patterns effectively.  
+
+##### Variability in Image Quality  
+- Images vary in resolution, lighting, and focus, which can affect model performance.  
+- Some images may have noise that obscure skin conditions.  
+
+##### Bias and Fairness Concerns  
+- Existing dermatology AI models have historically struggled with darker skin tones due to biased training data.  
+- Need to ensure that the model performs equitably across all demographic groups.  
+
+
+### EDA Visualizations
+**Class Distribution:** A bar chart displaying the frequency of each skin condition in the dataset, highlighting any class imbalances.
+<img width="1019" alt="image" src="https://github.com/user-attachments/assets/122c5c4f-1394-4beb-a522-9988e0e914c3" />
+
+**Skin Tone Representation:** A pie chart or histogram illustrating the distribution of skin tones across the dataset, revealing potential biases (1-lightest skin, 6-darkest skin).
+   <img width="718" alt="image" src="https://github.com/user-attachments/assets/6a7fcd90-4c0d-4776-a69d-1e9e4f3be146" />
+**Sample Image Augmentation:** A grid showcasing examples of augmented images, demonstrating transformations used to balance the dataset.
+<img width="793" alt="image" src="https://github.com/user-attachments/assets/fa835906-78f5-493b-bed5-a4905525d84b" />
 
 ---
-
+<!--
 ## **🧠 Model Development**
 
 **Describe (as applicable):**
@@ -115,6 +139,13 @@ Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi
 * What additional datasets or techniques would you explore?
 
 ---
+
+## **📄 References & Additional Resources**
+
+* Cite any relevant papers, articles, or tools used in your project
+
+---
+-->
 
 ## **📄 References & Additional Resources**
 

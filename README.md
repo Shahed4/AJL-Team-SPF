@@ -7,9 +7,9 @@
 | ----- | ----- | ----- |
 | Brianna Anaya  | @Briannanaya | Worked with EfficientNet CNN |
 | Veronica Zhao | @verozhao | Worked with Ensembled MobileNetV2, EfficientNetB0, and DenseNet121 |
+| Shahed Ahmed | @Shahed4 | Worked with Sequential, EfficientNetB0, InceptionV3, and MobileNetV2 |
 | Maame Abena |  |  |
 | Samin Chowdhury |  |  |
-| Shahed Ahmed |  |  |
 | Khadija Dial |  |  |
 
 ---

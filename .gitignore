@@ -1,5 +1,9 @@
 # Data
 bttai-ajl-2025
+*.csv
 
 # Unnecessary files
 .DS_Store
+
+# H5 Model
+*.h5

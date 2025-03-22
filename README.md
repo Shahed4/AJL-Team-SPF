@@ -7,6 +7,7 @@
 | Brianna Anaya  | @Briannanaya | Worked with EfficientNet CNN |
 | Mel Ramakrishnan | @MelRam | Led EDA, visualized dataset distributions, handled missing data |
 | Charlie Nguyen | @CharlieN | Implemented explainability tools |
+| Veronica Zhao | @verozhao | Worked with Ensembled MobileNetV2, EfficientNetB0, and DenseNet121 |
 
 ---
 

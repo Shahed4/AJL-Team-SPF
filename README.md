@@ -10,7 +10,7 @@
 | Shahed Ahmed | @Shahed4 | Worked with Sequential, EfficientNetB0, InceptionV3, and MobileNetV2 |
 | Maame Abena |  |  |
 | Samin Chowdhury |  |  |
-| Khadija Dial |  |  |
+| Khadija Dial | @Kdial17 | Worked with the Sequential & Inceptionv3 model |
 
 ---
 <!--

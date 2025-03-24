@@ -24,20 +24,37 @@
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
 🔗 [WiDS Datathon 2025 | Kaggle Competition Page](https://www.kaggle.com/competitions/widsdatathon2025/overview)
 
----
+--->
 
 ## **👩🏽‍💻 Setup & Execution**
 
 **Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
 
 * How to clone the repository
+Start by cloning the repository to your local machine: bash Copy Edit
+> git clone https://github.com/Shahed4/AJL-Team-SPF
+> cd AJL-Team-SPF
 * How to install dependencies
+The project requires several dependencies, which are listed in the requirements.txt file. You can install them using pip:
+> pip install -r requirements.txt
 * How to set up the environment
-* How to access the dataset(s)
-* How to run the notebook or scripts
+It's recommended to create a virtual environment to manage dependencies. Here’s how you can set it up:
 
----
--->
+1) Create a virtual environment:
+> python -m venv venv
+2) Activate the virtual environment: 
+- On Windows:
+> .\venv\Scripts\activate
+- On macOS/Linux:
+> source venv/bin/activate
+* How to access the dataset(s)
+The dataset used in this project is provided through the Kaggle competition [BTTAI AJL 2025](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
+* How to run the notebook or scripts
+The project includes a Python notebook that you can run to execute the code:
+Open the notebook (e.g., model_training.ipynb) in Jupyter or any compatible notebook interface.
+Execute the cells to train the model or perform other tasks.
+
+
 ## **🏗️ Project Overview**
 
 * This project is part of a Kaggle competition sponsored by Break Through Tech and the Algorithmic Justice League, aiming to build more inclusive AI models in dermatology. The competition involves Break Through Tech AI Fellows from various programs, including Virtual, MIT, and UCLA, with mentorship from data science and AI TAs.

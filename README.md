@@ -9,7 +9,7 @@
 | Veronica Zhao | @verozhao | Worked with Ensembled MobileNetV2, EfficientNetB0, and DenseNet121 |
 | Shahed Ahmed | @Shahed4 | Worked with Sequential, EfficientNetB0, InceptionV3, and MobileNetV2 |
 | Maame Abena |  |  |
-| Samin Chowdhury |  |  |
+| Samin Chowdhury | @rafsamins | Worked with EfficientNetB0, MobileNetV2, and InceptionV3 |
 | Khadija Dial | @Kdial17 | Worked with the Sequential & Inceptionv3 model |
 
 ---

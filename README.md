@@ -13,7 +13,7 @@
 | Khadija Dial | @Kdial17 | Worked with the Sequential & Inceptionv3 model |
 
 ---
-<!--
+
 ## **🎯 Project Highlights**
 
 * Built a InceptionV3 using transfer learning, data augmentation, and fine-tuning techniques to solve the Kaggle Skin Condition classification competition.
@@ -24,7 +24,7 @@
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
 🔗 [WiDS Datathon 2025 | Kaggle Competition Page](https://www.kaggle.com/competitions/widsdatathon2025/overview)
 
---->
+
 
 ## **👩🏽‍💻 Setup & Execution**
 

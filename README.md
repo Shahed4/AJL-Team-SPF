@@ -8,7 +8,7 @@
 | Brianna Anaya  | @Briannanaya | Worked with EfficientNet CNN |
 | Veronica Zhao | @verozhao | Worked with Ensembled MobileNetV2, EfficientNetB0, and DenseNet121 |
 | Shahed Ahmed | @Shahed4 | Worked with Sequential, EfficientNetB0, InceptionV3, and MobileNetV2 |
-| Maame Abena |  |  |
+| Maame Abena | @abenaoboateng | Worked with EfficientNet CNN & Expanded Data Augmentation |
 | Samin Chowdhury | @rafsamins | Worked with EfficientNetB0, MobileNetV2, and InceptionV3 |
 | Khadija Dial | @Kdial17 | Worked with the Sequential & Inceptionv3 model |
 
@@ -125,22 +125,44 @@ Execute the cells to train the model or perform other tasks.
 ---
 
 ## **🖼️ Impact Narrative**
+**Addressing Model Fairness:**
+- To ensure fairness in the model, several steps were taken to account for dataset imbalances and mitigate biases related to skin tones:
+Data Augmentation for Underrepresented Groups:
+- Since the dataset contained fewer images of darker skin tones (Fitzpatrick scales 4, 5, and 6), data augmentation techniques were applied to increase representation
+- These techniques included rotation, flipping, zooming, brightness adjustments, and contrast changes to artificially expand the dataset while preserving the key features of skin conditions.
+- This aimed to create a more balanced dataset, ensuring the model learns from diverse skin tones rather than being biased towards overrepresented lighter tones.
 
-**Answer the relevant questions below based on your competition:**
+**Exploratory Data Analysis (EDA) to Identify Biases:**
+- The dataset was analyzed to determine the distribution of skin tones and medical conditions, highlighting any existing imbalances.
+- The visualization of the Fitzpatrick scale distribution helped to confirm the underrepresentation of darker skin tones.
+- The model’s performance was later monitored across different skin tones to assess whether classification accuracy varied significantly between lighter and darker skin types.
 
-**WiDS challenge:**
+**Handling Class Imbalance for Skin Conditions:**
+-Some skin conditions, such as seborrheic keratosis and basal-cell carcinoma-morpheiform, were underrepresented in the dataset.
+- Additional images of these conditions were synthetically generated or given more weight in training through oversampling techniques to prevent the model from being biased toward more common conditions.
 
-1. What brain activity patterns are associated with ADHD; are they different between males and females, and, if so, how?
-2. How could your work help contribute to ADHD research and/or clinical care?
+**Validation Set Performance Assessment:**
+- A validation set was used to evaluate how well the model performed across different Fitzpatrick skin types and ensure it was not disproportionately misclassifying darker skin tones.
+- Performance metrics such as precision, recall, and F1-score were monitored separately for each skin type to identify disparities in prediction accuracy.
 
-**AJL challenge:**
 
-As Dr. Randi mentioned in her challenge overview, “Through poetry, art, and storytelling, you can reach others who might not know enough to understand what’s happening with the machine learning model or data visualizations, but might still be heavily impacted by this kind of work.”
-As you answer the questions below, consider using not only text, but also illustrations, annotated visualizations, poetry, or other creative techniques to make your work accessible to a wider audience.
-Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi6TlPviC3q/view) from the Algorithmic Justice League for inspiration!
+**Ethical Considerations & Bias Mitigation Strategies:**
+- The dataset was examined for any inherent biases that could lead to skewed predictions.
+- Bias detection methods were explored to ensure that misclassifications were not disproportionately affecting any particular demographic.
+- If disparities were detected, model fine-tuning was implemented, including adjusting loss functions and using fairness-aware algorithms.
 
-1. What steps did you take to address [model fairness](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)? (e.g., leveraging data augmentation techniques to account for training dataset imbalances; using a validation set to assess model performance across different skin tones)
-2. What broader impact could your work have?
+**Broader Impact of This Work:**
+This project has significant implications for healthcare equity, AI fairness, and dermatological diagnostics:
+
+**Improving Diagnostic Accuracy Across Skin Tones:**
+- Historically, dermatology datasets have been heavily biased towards lighter skin tones, leading to misdiagnosis and delayed treatment for patients with darker skin.
+- By ensuring the model performs well across all Fitzpatrick scales, this work contributes to reducing racial disparities in dermatological AI systems.
+
+**Enhancing Accessibility to AI-Powered Skin Condition Detection:**
+- If integrated into real-world clinical settings or mobile health applications, this model could help bridge gaps in access to dermatological care, particularly for underserved communities.
+- Individuals who may not have immediate access to dermatologists could benefit from AI-driven preliminary assessments, leading to earlier intervention and improved health outcomes.
+
+
 
 ---
 

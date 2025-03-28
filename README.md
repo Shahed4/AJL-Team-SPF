@@ -98,6 +98,14 @@ Execute the cells to train the model or perform other tasks.
 <img width="793" alt="image" src="https://github.com/user-attachments/assets/fa835906-78f5-493b-bed5-a4905525d84b" />
 
 ---
+
+## **🚀 Next Steps & Future Improvements**
+
+* One limiation of our model is its computational complexity. While InceptionV3 is highly efficient in extracting multi-scale features,
+  it has a deep and wide architecture with multiple branches, making it computationally expensive. This can lead to a higher risk of overfitting especiallly of the dataset is small.
+  Additionally, compared to simpler architectures like ResNet or MobileNet, InceptionV3 can be harder to fine-tune, as freezing/unfreezing layers affects multiple convolutional branches.
+* With more time and resources, we would like to: increase the dataset size by collecting more high-quality images, explore transfer learning by use a pretrained InceptionV3 model and fine-tune the later layers, and lastly experiment with regularization and use more GPPU/CPU power for faster training time.
+
 <!--
 ## **🧠 Model Development**
 
@@ -162,18 +170,6 @@ This project has significant implications for healthcare equity, AI fairness, an
 - If integrated into real-world clinical settings or mobile health applications, this model could help bridge gaps in access to dermatological care, particularly for underserved communities.
 - Individuals who may not have immediate access to dermatologists could benefit from AI-driven preliminary assessments, leading to earlier intervention and improved health outcomes.
 
-
-
----
-
-## **🚀 Next Steps & Future Improvements**
-
-**Address the following:**
-
-* What are some of the limitations of your model?
-* What would you do differently with more time/resources?
-* What additional datasets or techniques would you explore?
-
 ---
 
 ## **📄 References & Additional Resources**
@@ -181,7 +177,7 @@ This project has significant implications for healthcare equity, AI fairness, an
 * Cite any relevant papers, articles, or tools used in your project
 
 ---
--->
+
 
 ## **📄 References & Additional Resources**
 

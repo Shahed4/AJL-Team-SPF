@@ -119,7 +119,6 @@ Execute the cells to train the model or perform other tasks.
 
 ## **📈 Results & Key Findings**
 
-**Describe (as applicable):**
 
 * Performance metrics (e.g., Kaggle Leaderboard score, F1-score)
 * How your model performed overall

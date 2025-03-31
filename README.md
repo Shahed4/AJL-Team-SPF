@@ -108,27 +108,44 @@ Execute the cells to train the model or perform other tasks.
 
 ## **🧠 Model Development**
 
----Models Used
+Models Used
+
 We experimented with multiple deep learning architectures to achieve optimal performance:
+
 EfficientNetB0: A lightweight and highly efficient convolutional neural network that balances performance and computational cost.
+
 Sequential Model: A custom-built CNN model designed for interpretability and baseline comparison.
+
 InceptionV3: A powerful architecture optimized for image classification tasks, leveraging factorized convolutions and auxiliary classifiers.
+
 Ensembled MobileNetV2 & DenseNet121: A hybrid approach combining MobileNetV2 (for efficiency) and DenseNet121 (for feature reuse and deep representations) to improve classification accuracy.
 
 Feature Selection & Hyperparameter Tuning Strategies
+
 Feature Selection:
+
 Used principal component analysis (PCA) and feature maps from pre-trained models to extract meaningful representations.
+
 Applied data augmentation techniques (rotation, flipping, brightness adjustment) to enhance model generalization.
+
 Hyperparameter Tuning:
+
 Learning Rate Optimization: Experimented with values in the range of 1e-5 to 1e-3 using the ReduceLROnPlateau scheduler.
+
 Batch Size: Evaluated batch sizes of 16, 32, and 64 to balance memory efficiency and convergence speed.
+
 Dropout & Regularization: Applied dropout rates between 0.2 and 0.5 to prevent overfitting.
+
 Optimizer Selection: Compared Adam, RMSprop, and SGD with momentum to find the best optimizer for each model.
 
 Training Setup
+
 Data Split:
+
 80% Training, 10% Validation, 10% Test to ensure a robust evaluation pipeline.
+
 Evaluation Metric:
+
 Accuracy, Precision, Recall, F1-score to assess classification performance.
 
 

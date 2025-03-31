@@ -106,22 +106,40 @@ Execute the cells to train the model or perform other tasks.
   Additionally, compared to simpler architectures like ResNet or MobileNet, InceptionV3 can be harder to fine-tune, as freezing/unfreezing layers affects multiple convolutional branches.
 * With more time and resources, we would like to: increase the dataset size by collecting more high-quality images, explore transfer learning by use a pretrained InceptionV3 model and fine-tune the later layers, and lastly experiment with regularization and use more GPPU/CPU power for faster training time.
 
-<!--
 ## **🧠 Model Development**
 
-**Describe (as applicable):**
+---Models Used
+We experimented with multiple deep learning architectures to achieve optimal performance:
+EfficientNetB0: A lightweight and highly efficient convolutional neural network that balances performance and computational cost.
+Sequential Model: A custom-built CNN model designed for interpretability and baseline comparison.
+InceptionV3: A powerful architecture optimized for image classification tasks, leveraging factorized convolutions and auxiliary classifiers.
+Ensembled MobileNetV2 & DenseNet121: A hybrid approach combining MobileNetV2 (for efficiency) and DenseNet121 (for feature reuse and deep representations) to improve classification accuracy.
 
-* Model(s) used (e.g., CNN with transfer learning, regression models)
-* Feature selection and Hyperparameter tuning strategies
-* Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
+Feature Selection & Hyperparameter Tuning Strategies
+Feature Selection:
+Used principal component analysis (PCA) and feature maps from pre-trained models to extract meaningful representations.
+Applied data augmentation techniques (rotation, flipping, brightness adjustment) to enhance model generalization.
+Hyperparameter Tuning:
+Learning Rate Optimization: Experimented with values in the range of 1e-5 to 1e-3 using the ReduceLROnPlateau scheduler.
+Batch Size: Evaluated batch sizes of 16, 32, and 64 to balance memory efficiency and convergence speed.
+Dropout & Regularization: Applied dropout rates between 0.2 and 0.5 to prevent overfitting.
+Optimizer Selection: Compared Adam, RMSprop, and SGD with momentum to find the best optimizer for each model.
 
----
+Training Setup
+Data Split:
+80% Training, 10% Validation, 10% Test to ensure a robust evaluation pipeline.
+Evaluation Metric:
+Accuracy, Precision, Recall, F1-score to assess classification performance.
+
 
 ## **📈 Results & Key Findings**
 
 
 * Performance metrics (e.g., Kaggle Leaderboard score, F1-score)
+Kaggle Leaderboard score: 23/74
+F-1 Score: 54%
 * How your model performed overall
+Model Performance: 
 * How your model performed across different skin tones (AJL)
 * Insights from evaluating model fairness (AJL)
 

@@ -5,7 +5,7 @@
 
 | Name | GitHub Handle | Contribution |
 | ----- | ----- | ----- |
-| Brianna Anaya  | @Briannanaya | Worked with EfficientNet CNN |
+| Brianna Anaya  | @Briannanaya | Worked with EfficientNet CNN, Date Exploration and Data Augmentation|
 | Veronica Zhao | @verozhao | Worked with Ensembled MobileNetV2, EfficientNetB0, and DenseNet121 |
 | Shahed Ahmed | @Shahed4 | Worked with Sequential, EfficientNetB0, InceptionV3, and MobileNetV2 |
 | Maame Abena | @abenaoboateng | Worked with EfficientNet CNN & Expanded Data Augmentation |
@@ -130,7 +130,7 @@ Execute the cells to train the model or perform other tasks.
 
 * Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
 
----
+--->
 
 ## **🖼️ Impact Narrative**
 **Addressing Model Fairness:**
@@ -169,18 +169,3 @@ This project has significant implications for healthcare equity, AI fairness, an
 **Enhancing Accessibility to AI-Powered Skin Condition Detection:**
 - If integrated into real-world clinical settings or mobile health applications, this model could help bridge gaps in access to dermatological care, particularly for underserved communities.
 - Individuals who may not have immediate access to dermatologists could benefit from AI-driven preliminary assessments, leading to earlier intervention and improved health outcomes.
-
----
-
-## **📄 References & Additional Resources**
-
-* Cite any relevant papers, articles, or tools used in your project
-
----
-
-
-## **📄 References & Additional Resources**
-
-* Cite any relevant papers, articles, or tools used in your project
-
----

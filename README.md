@@ -155,16 +155,10 @@ Accuracy, Precision, Recall, F1-score to assess classification performance.
 * Performance metrics (e.g., Kaggle Leaderboard score, F1-score)
 Kaggle Leaderboard score: 23/74
 F-1 Score: 54%
-* How your model performed overall
 Model Performance: 
-* How your model performed across different skin tones (AJL)
-* Insights from evaluating model fairness (AJL)
+Confusion Matrix
+![image](https://github.com/user-attachments/assets/d9cba501-5a57-4dcc-943e-8e46a28a8a28)
 
-**Potential visualizations to include:**
-
-* Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
-
---->
 
 ## **🖼️ Impact Narrative**
 **Addressing Model Fairness:**
